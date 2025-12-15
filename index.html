@@ -319,6 +319,60 @@
             font-weight: 500;
         }
 
+        /* --- Contact Styles --- */
+        .location-tag {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-light);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .location-icon {
+            margin-right: 8px;
+        }
+
+        .contact-row {
+            display: flex;
+            gap: 15px;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-contact {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border: 1px solid var(--border);
+            background-color: white;
+            color: var(--text-main);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-contact:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+            border: 1px solid var(--accent);
+        }
+
+        .btn-primary:hover {
+            background-color: #b45309;
+            /* Darker orange */
+            color: white;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .hero-section {
@@ -374,16 +428,34 @@
                 <div class="hero-text">
                     <span class="subtitle">SOFTWARE & HARDWARE ENGINEER</span>
                     <h1>Chou Chia Hung</h1>
-                    <!-- <p>
+
+                    <div class="location-tag">
+                        <span class="location-icon">📍</span> Taipei, Taiwan
+                    </div>
+
+                    <p>
                         Specializing in <strong>Computer Vision, AI, and Algorithm Design</strong>.
                         With a dual background in Civil Engineering and CS (NTU), I bridge the gap between hardware
                         constraints and intelligent software solutions.
-                    </p> -->
+                    </p>
+
                     <div style="display: flex; gap: 15px; flex-wrap: wrap;">
                         <span class="tag">NTU Master's</span>
                         <span class="tag">New Grad</span>
-                        <span class="tag">Foxconn</span>
-                        <!-- <span class="tag">Algorithm</span> -->
+                        <span class="tag">C/C++</span>
+                    </div>
+
+                    <div class="contact-row">
+                        <a href="mailto:zhou860925@gmail.com" class="btn-contact btn-primary">
+                            📧 Email Me
+                        </a>
+                        <a href="https://www.linkedin.com/in/chia-hung-chou-76824a190/" target="_blank"
+                            class="btn-contact">
+                            🔗 LinkedIn
+                        </a>
+                        <a href="tel:+886978909095" class="btn-contact">
+                            📱 (+886) 978-909-095
+                        </a>
                     </div>
                 </div>
 
