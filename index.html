@@ -434,9 +434,11 @@
                     </div>
 
                     <p>
-                        Specializing in <strong>Computer Vision, AI, and Algorithm Design</strong>.
-                        With a dual background in Civil Engineering and CS (NTU), I bridge the gap between hardware
-                        constraints and intelligent software solutions.
+                        CS Graduate with a focus on <strong>Computer Vision and Systems Programming.</strong>
+                        Experienced in <strong>C/C++</strong> and <strong>Linux Kernel development</strong>,
+                        specializing in high-performance concurrency, memory-mapped I/O, and hardware-aware
+                        optimization. Passionate about bridging the gap between AI algorithms and low-level system
+                        architecture.
                     </p>
 
                     <div style="display: flex; gap: 15px; flex-wrap: wrap;">
@@ -449,9 +451,8 @@
                         <a href="mailto:zhou860925@gmail.com" class="btn-contact btn-primary">
                             📧 Email Me
                         </a>
-                        <a href="https://www.linkedin.com/in/chia-hung-chou-76824a190/" target="_blank"
-                            class="btn-contact">
-                            🔗 LinkedIn
+                        <a href="https://github.com/csie-zhou" target="_blank" class="btn-contact">
+                            🔗 Github
                         </a>
                         <a href="tel:+886978909095" class="btn-contact">
                             📱 (+886) 978-909-095
@@ -479,10 +480,17 @@
                     <div class="exp-company">FOXCONN</div>
                 </div>
                 <ul class="exp-details">
-                    <li>Engineered <strong>HDRI (High Dynamic Range Imaging)</strong> and color balancing pipelines.
+                    <!-- <li>Engineered <strong>HDRI (High Dynamic Range Imaging)</strong> and color balancing pipelines.
                     </li>
                     <li>Developed automated tools for Qualcomm platforms to recommend optimal image parameters.</li>
-                    <li>Designed UI tools using <strong>PyQt</strong> for internal R&D efficiency.</li>
+                    <li>Designed UI tools using <strong>PyQt</strong> for internal R&D efficiency.</li> -->
+                    <li>Developed an algorithmic ISP tuning tool that replaced manual reshooting workflows, reducing
+                        opti-
+                        mization cycles from a week to 1 day through deterministic parameter calculation.</li>
+                    <li>Interfaced with Qualcomm HAL configuration layers to optimize HDR performance; performed C++
+                        code reviews and system-level debugging to ensure production stability on Snapdragon platforms.
+                    </li>
+
                 </ul>
             </div>
 
@@ -492,7 +500,9 @@
                     <div class="exp-company">CONTINENTAL ENGINEERING</div>
                 </div>
                 <ul class="exp-details">
-                    <li>Developed C# API plugins for Autodesk Revit to automate architectural workflows.</li>
+                    <!-- <li>Developed C# API plugins for Autodesk Revit to automate architectural workflows.</li> -->
+                    <li>Designed and implemented modular software solutions using C\# and .NET to interface with
+                        Autodesk Revit APIs, reducing processing time by 90\% through asynchronous execution.</li>
                 </ul>
             </div>
         </div>
@@ -501,8 +511,106 @@
     <section id="projects" style="background-color: #faf8f4;">
         <div class="container">
             <div class="section-header">
-                <h2>Key Projects</h2>
+                <h2>Technical Projects</h2>
                 <div class="divider"></div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-visual">
+                    <img src="https://placehold.co/1200x600/1a202c/ffffff?text=Kernel+Space:+Zero-Copy+Memory+Mapping"
+                        alt="Linux Kernel Module Diagram">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Linux Kernel</span>
+                        <span class="tag">C Programming</span>
+                        <span class="tag">Systems Programming</span>
+                    </div>
+                    <h3>High-Performance Character Device Driver</h3>
+                    <p>
+                        Developed a custom <strong>Linux Kernel Module (LKM)</strong> to facilitate high-speed
+                        communication between User and Kernel space.
+                        By implementing <strong>mmap</strong> support, I enabled zero-copy data transfers, bypassing
+                        traditional <code>copy_to_user</code> overhead
+                        to maximize throughput for data-intensive applications.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-val">Zero-Copy</span>
+                            <span class="metric-label">Memory Architecture</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-val">Race-Free</span>
+                            <span class="metric-label">Mutex & Spinlock Sync</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-visual">
+                    <img src="https://placehold.co/1200x600/3182ce/ffffff?text=Thread+Pool:+Producer-Consumer+Architecture"
+                        alt="Multi-threaded Task Scheduler Diagram">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Pthreads</span>
+                        <span class="tag">C</span>
+                        <span class="tag">Concurrent Systems</span>
+                    </div>
+                    <h3>Multi-threaded Systems Task Scheduler</h3>
+                    <p>
+                        Engineered a high-performance <strong>C Thread Pool</strong> leveraging a producer-consumer
+                        model to decouple task submission from execution.
+                        By utilizing <strong>POSIX Threads</strong> and condition variables, I implemented a robust
+                        scheduling system capable of managing
+                        dynamic workloads with minimal resource contention.
+                    </p>
+
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-val">0 Leaks</span>
+                            <span class="metric-label">Valgrind Verified</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-val">Thread-Safe</span>
+                            <span class="metric-label">Mutex/Cond Var Sync</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-visual">
+                    <img src="https://placehold.co/1200x600/7c3aed/ffffff?text=Secure+Boot:+Chain+of+Trust+Simulation"
+                        alt="Secure Boot and TEE Diagram">
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Cybersecurity</span>
+                        <span class="tag">Linux Security</span>
+                        <span class="tag">Cryptography</span>
+                    </div>
+                    <h3>Secure Boot & Firmware Integrity Simulation</h3>
+                    <p>
+                        Researched and simulated <strong>Chain of Trust</strong> protocols by implementing a
+                        cryptographic signing process for custom Linux Kernel Modules.
+                        I enforced strict <strong>signature verification</strong> at the kernel level and explored TEE
+                        (Trusted Execution Environment)
+                        concepts to maintain firmware integrity against unauthorized modifications.
+                    </p>
+
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-val">RSA/ECDSA</span>
+                            <span class="metric-label">Key Provisioning</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-val">TEE</span>
+                            <span class="metric-label">Integrity Isolation</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="project-item">
@@ -569,7 +677,7 @@
         </div>
     </section>
 
-    <section id="skills">
+    <!-- <section id="skills">
         <div class="container">
             <div class="section-header">
                 <h2>Technical Stack</h2>
@@ -600,11 +708,65 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Stack</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Systems & Security</h3>
+                    <div class="skill-list">
+                        <span class="skill-pill">Linux Kernel Modules</span>
+                        <span class="skill-pill">Device Drivers</span>
+                        <span class="skill-pill">Secure Boot / TEE</span>
+                        <span class="skill-pill">pthreads</span>
+                        <span class="skill-pill">mmap & DMA</span>
+                        <span class="skill-pill">RTOS</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Architecture & Hardware</h3>
+                    <div class="skill-list">
+                        <span class="skill-pill">Computer Architecture</span>
+                        <span class="skill-pill">RISC-V</span>
+                        <span class="skill-pill">Verilog</span>
+                        <span class="skill-pill">VLSI CAD</span>
+                        <span class="skill-pill">Digital Signal Processing</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Software & AI</h3>
+                    <div class="skill-list">
+                        <span class="skill-pill">C / C++ / C#</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Computer Vision (YOLOv8)</span>
+                        <span class="skill-pill">PyQt</span>
+                        <span class="skill-pill">Shell Scripting</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h3>Tools & Debugging</h3>
+                    <div class="skill-list">
+                        <span class="skill-pill">GDB & Valgrind</span>
+                        <span class="skill-pill">Git</span>
+                        <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">QEMU / KVM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer style="padding: 4rem 0; text-align: center; color: var(--text-light); font-size: 0.9rem;">
         <div class="container">
-            <p>&copy; 2025 Chou Chia Hung. Created for Engineering Interviews.</p>
+            <p>&copy; 2026 Chou Chia Hung. Created for Engineering Interviews.</p>
         </div>
     </footer>
 
